@@ -10,8 +10,8 @@
 - Powerbank 20000mah (2x USB, 1 USB-c, 1 mini usb)
 
 ## Software setup
-- [Seed Voicecard](https://github.com/HinTak/seeed-voicecard) used as driver for *Keyestudio 5V 2 Mic Pi HAT V1.0* since official version is outdated
-- [Vosk](https://github.com/alphacep/vosk-api) tested with python and worked fine, but I want to improve it by compiling the C code to improve performance.
+- [Seeed Voicecard](https://github.com/HinTak/seeed-voicecard) used as driver for *Keyestudio 5V 2 Mic Pi HAT V1.0* since official version is outdated
+- [Vosk](https://github.com/alphacep/vosk-api) tested with python and worked fine, but I want to improve it by compiling the C code to increase the performance.
 - [Piper](https://github.com/rhasspy/piper) actually I didn't test yet, but when I try, I will give a feedback.
 
 
