@@ -17,6 +17,7 @@
 - [Piper](https://github.com/rhasspy/piper) tested with python and worked fine. It struggles to process a big text. Splitting it into small sentences is a good strategy to go.
 - [ChatGPT](https://platform.openai.com/docs/guides/text?api-mode=responses) take some time to respond, but answer is very accurate (except for some information about news, weather, etc)
 
+
 ## Improvements to do
 - Use memory buffer instead of saving wav file into a file
 - Don't block main thread for some audios (Ex: confirmation sound, feedback before chatgpt request, etc)
