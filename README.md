@@ -9,11 +9,21 @@
 - 2x Speaker 52mm 4Ω 3W
 - Powerbank 20000mah (2x USB, 1 USB-c, 1 mini usb)
 
+<img src="resources/components.png" alt="Foto dos componentes" />
+
 ## Software setup
 - [Seeed Voicecard](https://github.com/HinTak/seeed-voicecard) used as driver for *Keyestudio 5V 2 Mic Pi HAT V1.0* since official version is outdated
-- [Vosk](https://github.com/alphacep/vosk-api) tested with python and worked fine, but I want to improve it by compiling the C code to increase the performance.
-- [Piper](https://github.com/rhasspy/piper) actually I didn't test yet, but when I try, I will give a feedback.
+- [Vosk](https://github.com/alphacep/vosk-api) tested with python and worked fine, but I want to improve it by compiling the C code to increase performance.
+- [Piper](https://github.com/rhasspy/piper) tested with python and worked fine. It struggles to process a big text. Splitting it into small sentences is a good strategy to go.
+- [ChatGPT](https://platform.openai.com/docs/guides/text?api-mode=responses) take some time to respond, but answer is very accurate (except for some information about news, weather, etc)
 
+
+## Improvements to do
+- Use memory buffer instead of saving wav file into a file
+- Don't block main thread for some audios (Ex: confirmation sound, feedback before chatgpt request, etc)
+- Investigate how to mix languages with vosk - problem with to identify terms in english when portuguese is set.
+- Fix "input overflow" error
+- Implement a web server for debug purpose
 
 ## Useful commands
 - `aplay -l` # get all output devices
